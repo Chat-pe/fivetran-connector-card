@@ -8,4 +8,6 @@
 
 - Change the settings in `main.py`
 
+- Add `API_KEY` and `SECRET` to `.env.py` file in the root directory
+
 - run using: `python main.py`

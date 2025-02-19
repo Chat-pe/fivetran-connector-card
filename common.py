@@ -3,11 +3,10 @@ import base64
 from collections.abc import Callable
 from typing import Generic, Literal, Optional, TypeVar
 from pydantic import BaseModel
+from .env.py import API_KEY, SECRET
 import requests
 
 BASE_URL = "https://api.fivetran.com/v1"
-API_KEY = "ySIRj4WNWDlgH4wQ"
-SECRET = "Pe6mUF5tsgYm0VEKdwcaQldQJclzmfjE"
 
 
 encode_base64: Callable[[str], str] = lambda x: base64.b64encode(
